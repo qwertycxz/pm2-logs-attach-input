@@ -30,8 +30,10 @@ for (let i = 0; i < process.argv.length; i++) {
 			if (process.argv[2] == '-h' || process.argv[2] == '--help') {
 				invalidOption()
 			}
-			id = process.argv[2]
-			break
+			if (!process.argv[2].startsWith('-')) {
+				id = process.argv[2]
+				break
+			}
 		default:
 			if (next_highlight) {
 				next_highlight = false
