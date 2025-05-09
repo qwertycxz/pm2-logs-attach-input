@@ -1,0 +1,25 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"author": "qwertycxz",
+	"bugs": "https://github.com/qwertycxz/pm2-logs-attach-input/issues/new",
+	"dependencies": {
+		"pm2": "^6.0.5"
+	},
+	"description": "A PM2 module to send message to stdin of processes in `pm2 logs`",
+	"devDependencies": {
+		"@types/node": "^22.15.3",
+		"typescript": "^5.8.3"
+	},
+	"directories": {
+		"bin": "bin"
+	},
+	"funding": "https://请填写我",
+	"license": "Apache-2.0",
+	"main": "dist/index.js",
+	"name": "pm2-logs-attach-input",
+	"repository": "https://github.com/qwertycxz/pm2-logs-attach-input",
+	"scripts": {
+		"build": "tsc"
+	},
+	"version": "0.0.1"
+}
