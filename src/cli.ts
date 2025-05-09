@@ -1,5 +1,10 @@
 function invalidOption(code = 0): never {
 	console.log(`
+A workaround to send messages to processes in 'pm2 logs'. This script is samilar to 'pm2 logs', but its stdin is open.
+Example:
+> 0 Lorem Ipsum
+This is to input the message 'Lorem Ipsum' to the process with id 0
+
 Usage: pm2-logs-attach-input [id|name|namespace] [options]
 Options:
 	-h, --help           show this help message

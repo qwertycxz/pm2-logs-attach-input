@@ -13,9 +13,14 @@
 	"directories": {
 		"bin": "bin"
 	},
+	"files": [
+		"bin",
+		"dist"
+	],
 	"funding": "https://请填写我",
 	"license": "Apache-2.0",
 	"main": "dist/index.js",
+	"man": "README.md",
 	"name": "pm2-logs-attach-input",
 	"repository": "https://github.com/qwertycxz/pm2-logs-attach-input",
 	"scripts": {
