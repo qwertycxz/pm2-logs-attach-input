@@ -3,8 +3,8 @@ jobs:
   package:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@main
-    - uses: actions/setup-node@main
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
       with:
         cache: npm
         registry-url: https://registry.npmjs.org
@@ -13,7 +13,7 @@ jobs:
     - env:
         token: ${{ secrets.NPM_TOKEN }}
       run: npm publish
-    - uses: actions/setup-node@main
+    - uses: actions/setup-node@v4
       with:
         cache: npm
         registry-url: https://npm.pkg.github.com
