@@ -17,7 +17,10 @@
 		"bin",
 		"dist"
 	],
-	"funding": "https://请填写我",
+	"funding": "https://ko-fi.com/qwertycxz",
+	"keywords": [
+		"pm2"
+	],
 	"license": "Apache-2.0",
 	"main": "dist/index.js",
 	"man": "README.md",
