@@ -11,11 +11,13 @@
 		"typescript": "^5.8.3"
 	},
 	"directories": {
-		"bin": "bin"
+		"bin": "bin",
+		"man": "man"
 	},
 	"files": [
 		"bin",
-		"dist"
+		"dist",
+		"man"
 	],
 	"funding": "https://ko-fi.com/qwertycxz",
 	"keywords": [
@@ -23,7 +25,6 @@
 	],
 	"license": "Apache-2.0",
 	"main": "dist/index.js",
-	"man": "README.md",
 	"name": "pm2-logs-attach-input",
 	"repository": "https://github.com/qwertycxz/pm2-logs-attach-input",
 	"scripts": {
