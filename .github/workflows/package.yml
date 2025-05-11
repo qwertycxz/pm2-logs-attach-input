@@ -9,16 +9,16 @@ jobs:
         cache: npm
     - run: npm ci
     - run: npm run build
-    - run: npm publish
-      with:
+    - env:
         token: ${{ secrets.NPM_TOKEN }}
+      run: npm publish
     - uses: actions/setup-node@main
       with:
         cache: npm
         registry-url: https://npm.pkg.github.com
-    - run: npm publish
-      with:
+    - env:
         token: ${{ secrets.GITHUB_TOKEN }}
+      run: npm publish
 name: Package
 on:
     release:
