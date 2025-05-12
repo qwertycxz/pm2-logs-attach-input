@@ -31,5 +31,5 @@
 		"build": "tsc",
 		"man": "mkdir man & pandoc README.md -o man/pm2-logs-attach-input.1"
 	},
-	"version": "0.0.5"
+	"version": "0.0.6"
 }
