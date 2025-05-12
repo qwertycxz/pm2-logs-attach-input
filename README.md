@@ -1,4 +1,26 @@
 # pm2-logs-attach-input
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/t/qwertycxz/pm2-logs-attach-input)](https://github.com/qwertycxz/pm2-logs-attach-input)
+[![GitHub commits since latest release](https://img.shields.io/github/commits-since/qwertycxz/pm2-logs-attach-input/latest)](https://github.com/qwertycxz/pm2-logs-attach-input)
+[![GitHub contributors](https://img.shields.io/github/contributors/qwertycxz/pm2-logs-attach-input)](https://github.com/qwertycxz/pm2-logs-attach-input)
+[![GitHub Created At](https://img.shields.io/github/created-at/qwertycxz/pm2-logs-attach-input)](https://github.com/qwertycxz/pm2-logs-attach-input)
+[![GitHub last commit](https://img.shields.io/github/last-commit/qwertycxz/pm2-logs-attach-input)](https://github.com/qwertycxz/pm2-logs-attach-input)
+[![NPM Collaborators](https://img.shields.io/npm/collaborators/pm2-logs-attach-input)](https://www.npmjs.com/package/pm2-logs-attach-input)
+[![GitHub language count](https://img.shields.io/github/languages/count/qwertycxz/pm2-logs-attach-input)](https://github.com/qwertycxz/pm2-logs-attach-input)
+[![GitHub top language](https://img.shields.io/github/languages/top/qwertycxz/pm2-logs-attach-input)](https://github.com/qwertycxz/pm2-logs-attach-input)
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/qwertycxz/pm2-logs-attach-input/total)](https://github.com/qwertycxz/pm2-logs-attach-input/releases)
+[![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/qwertycxz/pm2-logs-attach-input/latest/total)](https://github.com/qwertycxz/pm2-logs-attach-input/releases)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/qwertycxz)](https://ko-fi.com/qwertycxz)
+[![GitHub Discussions](https://img.shields.io/github/discussions/qwertycxz/pm2-logs-attach-input)](https://github.com/qwertycxz/pm2-logs-attach-input/discussions)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/qwertycxz/pm2-logs-attach-input)](https://github.com/qwertycxz/pm2-logs-attach-input)
+[![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/qwertycxz/pm2-logs-attach-input)](https://github.com/qwertycxz/pm2-logs-attach-input)
+[![GitHub repo size](https://img.shields.io/github/repo-size/qwertycxz/pm2-logs-attach-input)](https://github.com/qwertycxz/pm2-logs-attach-input)
+[![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/pm2-logs-attach-input)](https://www.npmjs.com/package/pm2-logs-attach-input)
+[![GitHub followers](https://img.shields.io/github/followers/qwertycxz)](https://github.com/qwertycxz)
+[![GitHub forks](https://img.shields.io/github/forks/qwertycxz/pm2-logs-attach-input)](https://github.com/qwertycxz/pm2-logs-attach-input)
+[![GitHub Repo stars](https://img.shields.io/github/stars/qwertycxz/pm2-logs-attach-input)](https://github.com/qwertycxz/pm2-logs-attach-input)
+[![GitHub watchers](https://img.shields.io/github/watchers/qwertycxz/pm2-logs-attach-input)](https://github.com/qwertycxz/pm2-logs-attach-input)
+
+
 A workaround to send messages to processes in `pm2 logs`.
 
 This script is similar to `pm2 logs`, but its stdin is open.
