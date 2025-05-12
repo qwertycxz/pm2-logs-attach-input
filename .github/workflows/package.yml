@@ -3,22 +3,25 @@ jobs:
   package:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
+    - uses: actions/checkout@main
+    - uses: actions/setup-node@main
       with:
         cache: npm
-        registry-url: https://registry.npmjs.org
+    - uses: awalsh128/cache-apt-pkgs-action@master
+      with:
+        packages: pandoc
     - run: npm ci
     - run: npm run build
+    - run: npm run man
     - env:
-        token: ${{ secrets.NPM_TOKEN }}
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       run: npm publish
-    - uses: actions/setup-node@v4
+    - uses: actions/setup-node@main
       with:
         cache: npm
         registry-url: https://npm.pkg.github.com
     - env:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: npm publish
 name: Package
 on:

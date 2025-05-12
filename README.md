@@ -1,7 +1,7 @@
 # pm2-logs-attach-input
 A workaround to send messages to processes in `pm2 logs`.
 
-This script is samilar to `pm2 logs`, but its stdin is open.
+This script is similar to `pm2 logs`, but its stdin is open.
 
 This repo has the same functionality as [`pm2 logs --attach-input`](https://github.com/Unitech/pm2/pull/5981). While it is not merged into pm2 yet.
 ## Example:
