@@ -68,7 +68,7 @@ for (let i = 0; i < process.argv.length; i++) {
 				case '--highlight':
 					next_highlight = true
 					break
-				case '--line':
+				case '--lines':
 					next_lines = true
 					break
 				case '--timestamp':
