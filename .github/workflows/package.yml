@@ -3,28 +3,28 @@ jobs:
   package:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@main
-    - uses: actions/setup-node@main
-      with:
-        cache: npm
-        registry-url: https://registry.npmjs.org
-    - uses: awalsh128/cache-apt-pkgs-action@master
-      with:
-        packages: pandoc
-    - run: npm ci
-    - run: npm run build
-    - run: npm run man
-    - env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      run: npm publish
-    - uses: actions/setup-node@main
-      with:
-        registry-url: https://npm.pkg.github.com
-    - run: npm init -y --scope ${{ github.repository_owner }}
-    - env:
-        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: npm publish
+      - uses: actions/checkout@main
+      - uses: awalsh128/cache-apt-pkgs-action@9f7a885e33ff6f8166b600e3e74a981ec11b92c3
+        with:
+          packages: pandoc
+      - uses: oven-sh/setup-bun@22457c87c1b161cf7dde222c3e82b2b5f8d2bed2
+      - run: bun i
+      - run: bun run build
+      - run: bun run man
+      - env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: bun publish
+      - uses: oven-sh/setup-bun@22457c87c1b161cf7dde222c3e82b2b5f8d2bed2
+        with:
+          registry-url: https://npm.pkg.github.com
+          scope: '@${{ github.repository_owner }}'
+      - env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bun publish
 name: Package
 on:
-    release:
-        types: [created]
+  release:
+    types: [created]
+permissions:
+  contents: read
+  packages: write
