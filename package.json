@@ -7,7 +7,7 @@
 	},
 	"description": "A PM2 module to send message to stdin of processes in `pm2 logs`",
 	"devDependencies": {
-		"@types/node": "^22.15.3",
+		"@types/node": "^24.3.0",
 		"typescript": "^5.8.3"
 	},
 	"directories": {
