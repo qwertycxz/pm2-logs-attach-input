@@ -7,14 +7,14 @@ jobs:
       - uses: awalsh128/cache-apt-pkgs-action@acb598e5ddbc6f68a970c5da0688d2f3a9f04d05
         with:
           packages: pandoc
-      - uses: oven-sh/setup-bun@563911925f97b52638b2d040c6390de93f9f241a
+      - uses: oven-sh/setup-bun@3d267786b128fe76c2f16a390aa2448b815359f3
       - run: bun i
       - run: bun run build
       - run: bun run man
       - env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: bun publish
-      - uses: oven-sh/setup-bun@563911925f97b52638b2d040c6390de93f9f241a
+      - uses: oven-sh/setup-bun@3d267786b128fe76c2f16a390aa2448b815359f3
         with:
           registry-url: https://npm.pkg.github.com
           scope: '@${{ github.repository_owner }}'
