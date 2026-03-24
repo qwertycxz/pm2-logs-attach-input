@@ -8,7 +8,7 @@
 	"description": "A PM2 module to send message to stdin of processes in `pm2 logs`",
 	"devDependencies": {
 		"@types/node": "^25.0.0",
-		"typescript": "^5.8.3"
+		"typescript": "^6.0.2"
 	},
 	"directories": {
 		"bin": "bin",
