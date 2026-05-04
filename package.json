@@ -3,7 +3,7 @@
 	"author": "qwertycxz",
 	"bugs": "https://github.com/qwertycxz/pm2-logs-attach-input/issues/new",
 	"dependencies": {
-		"pm2": "^6.0.5"
+		"pm2": "^7.0.1"
 	},
 	"description": "A PM2 module to send message to stdin of processes in `pm2 logs`",
 	"devDependencies": {
