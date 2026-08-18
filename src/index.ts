@@ -10,8 +10,8 @@ rl.on('close', () => {
 	process.exit()
 })
 rl.on('line', (input) => {
-	const line = input.split(' ');
-	pm2.describe(line.shift(), (err, list) => {
+	const [name, ...line] = input.split(' ')
+	pm2.describe(name, (err, list) => {
 		if (err) {
 			process.exit(1)
 		}
