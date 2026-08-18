@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://www.schemastore.org/dependabot-2.0
+# yaml-language-server: $schema=https://schemastore.org/dependabot-2.0
 updates:
   - assignees: [qwertycxz]
     commit-message:
